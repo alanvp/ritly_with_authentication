@@ -1,4 +1,5 @@
 class RitlyController < ApplicationController
+	before_filter :signed_in_user, only: [:create, :show, :go, :preview]
 
 	def index
 	end
