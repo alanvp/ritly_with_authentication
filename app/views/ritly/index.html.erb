@@ -1,0 +1,21 @@
+
+<div class="entry_box">
+
+		<h1>RITLY</h1>
+		<p>From the creators of Edward Scissorhands comes RITLY, a URL shortner.</p> 
+		<%= form_for :ritly, url: create_path, method: :post do |f| %>
+		  <p>
+		    <%= f.text_field :link, placeholder: "Enter URL to shorten" %>
+		  </p>
+		 
+		  <p>
+		    <%= f.submit %>
+		  </p>
+		<% end %>
+
+</div>
+ 
+
+
+
+
